@@ -6,6 +6,9 @@
     --color-claro: rgb(32, 212, 182);
     --texto-color: rgb(189, 252, 73);
     --color-simbolo: rgb(147, 231, 37);
+    --color-presionar: rgb(173, 241, 179);
+    --color-copiar-texto: rgb(0, 255, 128);
+    --color-primer-elemento: rgb(158, 180, 107);
 }
 
 body {
@@ -109,4 +112,19 @@ button::before {
   color:   var(--color-simbolo);
   position: right;
   left:     0;
+}
+button:active {
+  transform: scale(0.94);
+  background: var(--color-presionar);
+}
+nav :active {
+  transform: scale(0.94);
+  background: var(--color-presionar);
+}
+body::selection {
+  background: var(--color-copiar-texto);
+  color:       #0e0e14;
+}
+#habilidades li:first-child { 
+    color: var(--color-primer-elemento); 
 }
