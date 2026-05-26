@@ -84,7 +84,8 @@ article {
 
 footer {
     background-color: var(--color-texto);
-    color: rgb(144, 243, 14);
+    
+     background: linear-gradient(to bottom right, #54c567, #55d35b, #64d348);
     text-align: center;
     padding: 20px;
     font-size: 0.875rem;
@@ -107,24 +108,54 @@ button:hover {
     background: var(--texto-color);
     transform: scale(1.08);
 }
+
 button::before {
-  content: "★";
-  color:   var(--color-simbolo);
-  position: right;
-  left:     0;
+    content: "★";
+    color: var(--color-simbolo);
+    position: right;
+    left: 0;
 }
+
 button:active {
-  transform: scale(0.94);
-  background: var(--color-presionar);
+    transform: scale(0.94);
+    background: var(--color-presionar);
 }
+
 nav :active {
-  transform: scale(0.94);
-  background: var(--color-presionar);
+    transform: scale(0.94);
+    background: var(--color-presionar);
 }
+
 body::selection {
-  background: var(--color-copiar-texto);
-  color:       #0e0e14;
+    background: var(--color-copiar-texto);
+    color: #0e0e14;
 }
-#habilidades li:first-child { 
-    color: var(--color-primer-elemento); 
+
+#habilidades li:first-child {
+    color: var(--color-primer-elemento);
+}
+
+#sobre-mi img:first-child {
+    border-radius: 50%;
+}
+
+img:hover {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+
+blockquote {
+  font-size: 22px ;
+  color: rgb(41, 226, 35)
+}
+span{
+color: #b4d85f; 
+    font-weight: bold;
+    background-color: #69d44f;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.mi-portafolio {
+  color: #38915a;
+  text-shadow: #883939;
 }
